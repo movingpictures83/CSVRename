@@ -1,0 +1,2 @@
+Prefix plugins/CSVRename/example
+Plugin CSVRename inputfile parameters.txt outputfile samples.replaced.csv

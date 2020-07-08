@@ -1,0 +1,3 @@
+replace	columns
+file1	plugins/CSVRename/example/samples.csv
+file2	plugins/CSVRename/example/taxa.csv
