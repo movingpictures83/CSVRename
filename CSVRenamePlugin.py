@@ -1,3 +1,5 @@
+import PyPluMA
+
 class CSVRenamePlugin:
    def input(self, filename):
       self.parameters = dict()
@@ -9,8 +11,8 @@ class CSVRenamePlugin:
 
    def run(self):
       replace = self.parameters["replace"]
-      file1 = open(self.parameters["file1"], 'r')
-      file2 = open(self.parameters["file2"], 'r')
+      file1 = open(PyPluMA.prefix()+"/"+self.parameters["file1"], 'r')
+      file2 = open(PyPluMA.prefix()+"/"+self.parameters["file2"], 'r')
       self.contents = []
       i = 0
       for myline in file1:
